@@ -1,0 +1,15 @@
+127.0.0.1 - - [27/Apr/2013:23:23:27 +0200] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:23:32 +0200] "GET /WS/ HTTP/1.1" 404 957
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:24:09 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 500 4176
+127.0.0.1 - - [27/Apr/2013:23:33:06 +0200] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:33:08 +0200] "GET /WS/servlet/pl.edu.agh.monitordb.MonitorServiceServlet HTTP/1.1" 404 1057
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:34:31 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 500 4176
+127.0.0.1 - - [27/Apr/2013:23:35:11 +0200] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [27/Apr/2013:23:36:22 +0200] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:36:23 +0200] "GET /WS/ HTTP/1.1" 404 957
+127.0.0.1 - - [27/Apr/2013:23:43:19 +0200] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:44:29 +0200] "POST /WS/MonitorServiceServlet/MonitorDBService HTTP/1.1" 500 296
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:52:33 +0200] "GET /WS/WEB-INF/classes/hibernate.cfg.xml HTTP/1.1" 404 949
+127.0.0.1 - - [27/Apr/2013:23:53:25 +0200] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [27/Apr/2013:23:53:25 +0200] "GET /WS/WEB-INF/classes/hibernate.cfg.xml HTTP/1.1" 404 949
+127.0.0.1 - - [27/Apr/2013:23:58:38 +0200] "GET / HTTP/1.1" 404 951

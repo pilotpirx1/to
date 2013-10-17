@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\studia\tfs\toik\Java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2642396443.index
+130684488.index
+3424696206.index
+3159810539.index
+2308729701.index

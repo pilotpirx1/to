@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://MonitorDB.agh.edu.pl" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" name="MonitorServiceService" targetNamespace="http://MonitorDB.agh.edu.pl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="QName" type="xs:QName" />
+      <xs:element name="anyType" type="xs:anyType" />
+      <xs:element name="anyURI" type="xs:string" />
+      <xs:element name="base64Binary" type="xs:base64Binary" />
+      <xs:element name="boolean" type="xs:boolean" />
+      <xs:element name="byte" type="xs:byte" />
+      <xs:element name="char" type="xs:int" />
+      <xs:element name="dateTime" type="xs:anySimpleType" />
+      <xs:element name="decimal" type="xs:decimal" />
+      <xs:element name="double" type="xs:double" />
+      <xs:element name="duration" type="xs:duration" />
+      <xs:element name="float" type="xs:float" />
+      <xs:element name="guid" type="xs:string" />
+      <xs:element name="int" type="xs:int" />
+      <xs:element name="long" type="xs:long" />
+      <xs:element name="short" type="xs:short" />
+      <xs:element name="string" type="xs:string" />
+      <xs:element name="unsignedByte" type="xs:short" />
+      <xs:element name="unsignedInt" type="xs:long" />
+      <xs:element name="unsignedLong" type="xs:integer" />
+      <xs:element name="unsignedShort" type="xs:int" />
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://MonitorDB.agh.edu.pl" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="AddData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="year" type="xs:int" />
+            <xs:element minOccurs="0" name="month" type="xs:int" />
+            <xs:element minOccurs="0" name="day" type="xs:int" />
+            <xs:element minOccurs="0" name="hour" type="xs:int" />
+            <xs:element minOccurs="0" name="min" type="xs:int" />
+            <xs:element minOccurs="0" name="sec" type="xs:float" />
+            <xs:element minOccurs="0" name="computer" type="xs:string" />
+            <xs:element minOccurs="0" name="counter" type="xs:string" />
+            <xs:element minOccurs="0" name="value" type="xs:float" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddDataResponse">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="AddDataResponse">
+    <wsdl:part name="parameters" element="tns:AddDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddData">
+    <wsdl:part name="parameters" element="tns:AddData" />
+  </wsdl:message>
+  <wsdl:portType name="IMonitorService">
+    <wsdl:operation name="AddData">
+      <wsdl:input wsam:Action="http://MonitorDB.agh.edu.pl/IMonitorService/AddData" wsaw:Action="http://MonitorDB.agh.edu.pl/IMonitorService/AddData" name="AddData" message="tns:AddData" />
+      <wsdl:output wsam:Action="http://MonitorDB.agh.edu.pl/IMonitorService/AddDataResponse" wsaw:Action="http://MonitorDB.agh.edu.pl/IMonitorService/AddDataResponse" name="AddDataResponse" message="tns:AddDataResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MonitorServiceServiceSoapBinding" type="tns:IMonitorService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddData">
+      <soap:operation soapAction="http://MonitorDB.agh.edu.pl/IMonitorService/AddData" style="document" />
+      <wsdl:input name="AddData">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AddDataResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MonitorServiceService">
+    <wsdl:port name="MonitorServicePort" binding="tns:MonitorServiceServiceSoapBinding">
+      <soap:address location="http://localhost:8080/WS/MonitorServiceServlet/MonitorDBService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

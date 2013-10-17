@@ -1,0 +1,6 @@
+C:\studia\tfs\toik\CS\ConsoleService\ConsoleService\bin\Debug\ConsoleService.exe.config
+C:\studia\tfs\toik\CS\ConsoleService\ConsoleService\bin\Debug\ConsoleService.exe
+C:\studia\tfs\toik\CS\ConsoleService\ConsoleService\bin\Debug\ConsoleService.pdb
+C:\studia\tfs\toik\CS\ConsoleService\ConsoleService\obj\Debug\ConsoleService.csprojResolveAssemblyReference.cache
+C:\studia\tfs\toik\CS\ConsoleService\ConsoleService\obj\Debug\ConsoleService.exe
+C:\studia\tfs\toik\CS\ConsoleService\ConsoleService\obj\Debug\ConsoleService.pdb

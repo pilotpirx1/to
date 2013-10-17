@@ -1,0 +1,46 @@
+﻿@model WebApp.Models.ValuesTable
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Values</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Time)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Time)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Computer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Computer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Counter)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Counter)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CounterValue)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CounterValue)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

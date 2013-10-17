@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="pl.edu.agh.monitordb.IMonitorService"/>
+<fullyQualifiedTypeName name="javax.security.auth.login.Configuration"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+<fullyQualifiedTypeName name="javax.imageio.spi.ServiceRegistry"/>
+<fullyQualifiedTypeName name="org.hibernate.service.ServiceRegistryBuilder"/>
+<fullyQualifiedTypeName name="pl.edu.agh.monitordb.Values"/>
+<fullyQualifiedTypeName name="org.hyperic.sigar.Cpu"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.hyperic.sigar.CpuPerc"/>
+<fullyQualifiedTypeName name="org.hyperic.sigar.Sigar"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="IMonitorService"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="MonitorServiceClient"/>
+</qualifiedTypeNameHistroy>

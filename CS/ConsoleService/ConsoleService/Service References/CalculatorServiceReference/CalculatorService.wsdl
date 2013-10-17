@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:tns="http://calculator.jaxws.axis2.apache.org" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://calculator.jaxws.axis2.apache.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified">
+      <xsd:import schemaLocation="CalculatorService?xsd=CalculatorService_schema1.xsd" namespace="http://calculator.jaxws.axis2.apache.org" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="add">
+    <wsdl:part name="parameters" element="tns:add" />
+  </wsdl:message>
+  <wsdl:message name="addResponse">
+    <wsdl:part name="parameters" element="tns:addResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNumbersException">
+    <wsdl:part name="fault" element="tns:AddNumbersException" />
+  </wsdl:message>
+  <wsdl:message name="getTicket">
+    <wsdl:part name="parameters" element="tns:getTicket" />
+  </wsdl:message>
+  <wsdl:message name="getTicketResponse">
+    <wsdl:part name="parameters" element="tns:getTicketResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CalculatorServicePortType">
+    <wsdl:operation name="add">
+      <wsdl:input wsaw:Action="http://calculator.jaxws.axis2.apache.org/add" message="tns:add" />
+      <wsdl:output wsaw:Action="http://calculator.jaxws.axis2.apache.org/addResponse" message="tns:addResponse" />
+      <wsdl:fault wsaw:Action="http://calculator.jaxws.axis2.apache.org/addFault" name="AddNumbersException" message="tns:AddNumbersException" />
+    </wsdl:operation>
+    <wsdl:operation name="getTicket">
+      <wsdl:input wsaw:Action="http://calculator.jaxws.axis2.apache.org/Calculator/getTicketRequest" message="tns:getTicket" />
+      <wsdl:output wsaw:Action="http://calculator.jaxws.axis2.apache.org/Calculator/getTicketResponse" message="tns:getTicketResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorServicePortBinding" type="tns:CalculatorServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="add">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="AddNumbersException">
+        <soap:fault use="literal" name="AddNumbersException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTicket">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalculatorService">
+    <wsdl:port name="CalculatorServicePort" binding="tns:CalculatorServicePortBinding">
+      <soap:address location="http://localhost:8080/axis2/services/CalculatorService.CalculatorServicePort/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

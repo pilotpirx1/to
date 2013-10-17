@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleService", "ConsoleService\ConsoleService.csproj", "{B6669262-81E5-42DF-BA6D-3591123E6F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "..\..\ASP.Net\WebApp\WebApp.csproj", "{FE005DAD-932C-4C7E-84B3-AF410E369BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Tests", "..\..\ASP.Net\WebApp.Tests\WebApp.Tests.csproj", "{206A71B1-1AFA-4B9A-BE0E-A5F39A8CE0D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{A8D95E14-481B-45F0-B8CA-849CB938BE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSDLGeneration", "..\Helper\WSDLGeneration\WSDLGeneration.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "..\Helper\WcfService1\WcfService1.csproj", "{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://naszeprojekty.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = ConsoleService\\ConsoleService.csproj
+		SccProjectName0 = ConsoleService
+		SccLocalPath0 = ConsoleService
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\ASP.Net\\WebApp\\WebApp.csproj
+		SccProjectName2 = ../../ASP.Net/WebApp
+		SccLocalPath2 = ..\\..\\ASP.Net\\WebApp
+		SccProjectUniqueName3 = ..\\..\\ASP.Net\\WebApp.Tests\\WebApp.Tests.csproj
+		SccProjectName3 = ../../ASP.Net/WebApp.Tests
+		SccLocalPath3 = ..\\..\\ASP.Net\\WebApp.Tests
+		SccProjectUniqueName4 = ..\\Helper\\WSDLGeneration\\WSDLGeneration.csproj
+		SccProjectTopLevelParentUniqueName4 = TOIK.sln
+		SccProjectName4 = ../Helper/WSDLGeneration
+		SccLocalPath4 = ..\\Helper\\WSDLGeneration
+		SccProjectUniqueName5 = ..\\Helper\\WcfService1\\WcfService1.csproj
+		SccProjectTopLevelParentUniqueName5 = TOIK.sln
+		SccProjectName5 = ../Helper/WcfService1
+		SccLocalPath5 = ..\\Helper\\WcfService1
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6669262-81E5-42DF-BA6D-3591123E6F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6669262-81E5-42DF-BA6D-3591123E6F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6669262-81E5-42DF-BA6D-3591123E6F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6669262-81E5-42DF-BA6D-3591123E6F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE005DAD-932C-4C7E-84B3-AF410E369BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE005DAD-932C-4C7E-84B3-AF410E369BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE005DAD-932C-4C7E-84B3-AF410E369BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE005DAD-932C-4C7E-84B3-AF410E369BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206A71B1-1AFA-4B9A-BE0E-A5F39A8CE0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206A71B1-1AFA-4B9A-BE0E-A5F39A8CE0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206A71B1-1AFA-4B9A-BE0E-A5F39A8CE0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206A71B1-1AFA-4B9A-BE0E-A5F39A8CE0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {A8D95E14-481B-45F0-B8CA-849CB938BE59}
+		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3} = {A8D95E14-481B-45F0-B8CA-849CB938BE59}
+	EndGlobalSection
+EndGlobal

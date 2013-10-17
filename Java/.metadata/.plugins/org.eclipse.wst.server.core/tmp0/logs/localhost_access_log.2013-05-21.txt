@@ -1,0 +1,13 @@
+127.0.0.1 - - [21/May/2013:13:42:08 +0200] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [21/May/2013:13:43:59 +0200] "GET /WS/ HTTP/1.1" 404 957
+0:0:0:0:0:0:0:1 - - [21/May/2013:13:50:49 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService HTTP/1.1" 500 271
+0:0:0:0:0:0:0:1 - - [21/May/2013:13:51:41 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+0:0:0:0:0:0:0:1 - - [21/May/2013:13:52:23 +0200] "POST /WS/MonitorServiceServlet/MonitorDBService HTTP/1.1" 200 227
+127.0.0.1 - - [21/May/2013:13:54:13 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+127.0.0.1 - - [21/May/2013:13:56:13 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+0:0:0:0:0:0:0:1 - - [21/May/2013:13:59:21 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+127.0.0.1 - - [21/May/2013:13:59:58 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+127.0.0.1 - - [21/May/2013:14:08:08 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+127.0.0.1 - - [21/May/2013:14:09:46 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+127.0.0.1 - - [21/May/2013:14:10:40 +0200] "GET /WS/MonitorServiceServlet/MonitorDBService?wsdl HTTP/1.1" 200 4312
+127.0.0.1 - - [21/May/2013:14:10:47 +0200] "POST /WS/MonitorServiceServlet/MonitorDBService HTTP/1.1" 200 227

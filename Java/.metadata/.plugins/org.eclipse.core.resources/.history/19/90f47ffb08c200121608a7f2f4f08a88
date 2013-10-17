@@ -1,0 +1,22 @@
+import org.hyperic.sigar.*;
+
+public class mainClass {
+
+	 private static Sigar sigar;
+	/**
+	 * @param args
+	 * @throws SigarException 
+	 * @throws InterruptedException 
+	 */
+	public static void main(String[] args) throws SigarException, InterruptedException {
+		CpuPerc cpu = sigar.getCpuPerc();
+		while(true) {
+			sigar = new Sigar();
+
+		System.out.println(cpu.getCombined());
+		Thread.sleep(1000);
+
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://calculator.jaxws.axis2.apache.org" xmlns:ns1="http://www.w3.org/2005/08/addressing" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://calculator.jaxws.axis2.apache.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="CalculatorService?xsd=http://www.w3.org/2006/03/addressing/ws-addr.xsd" namespace="http://www.w3.org/2005/08/addressing" />
+  <xs:element name="AddNumbersException" type="tns:AddNumbersException" />
+  <xs:element name="add" type="tns:add" />
+  <xs:element name="addResponse" type="tns:addResponse" />
+  <xs:element name="getTicket" type="tns:getTicket" />
+  <xs:element name="getTicketResponse" type="tns:getTicketResponse" />
+  <xs:complexType name="getTicket">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getTicketResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" form="qualified" name="return" type="ns1:EndpointReferenceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="add">
+    <xs:sequence>
+      <xs:element form="qualified" name="value1" type="xs:int" />
+      <xs:element form="qualified" name="value2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addResponse">
+    <xs:sequence>
+      <xs:element form="qualified" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AddNumbersException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

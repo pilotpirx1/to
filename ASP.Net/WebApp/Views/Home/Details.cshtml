@@ -1,0 +1,43 @@
+﻿@model WebApp.Models.ValuesTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Values</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Time)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Time)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Computer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Computer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Counter)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Counter)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CounterValue)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CounterValue)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MonitorDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ValuesTable" EntityType="MonitorDBModel.ValuesTable" />
+  </EntityContainer>
+  <EntityType Name="ValuesTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Time" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Computer" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Counter" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="CounterValue" Nullable="false" />
+  </EntityType>
+</Schema>

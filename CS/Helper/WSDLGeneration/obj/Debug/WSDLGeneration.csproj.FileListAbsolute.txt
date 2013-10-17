@@ -1,0 +1,5 @@
+C:\studia\tfs\toik\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll.config
+C:\studia\tfs\toik\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll
+C:\studia\tfs\toik\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.pdb
+C:\studia\tfs\toik\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.dll
+C:\studia\tfs\toik\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.pdb
