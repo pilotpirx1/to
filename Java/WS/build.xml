@@ -227,7 +227,7 @@
 			username="${tomcat-manager-username}"
 			password="${tomcat-manager-password}"
 			path="/${project-name}"
-			war="file:/projects/workspace/${project-name}/${build-directory}/${war-file-name}"
+			war="${build-directory}/${war-file-name}"
 		/>
 	</target>
 	
