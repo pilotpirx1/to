@@ -1,0 +1,5 @@
+C:\Workplace\project\to\CS\ConsoleService\WebAppTests\bin\Debug\WebAppTests.dll
+C:\Workplace\project\to\CS\ConsoleService\WebAppTests\bin\Debug\WebAppTests.pdb
+C:\Workplace\project\to\CS\ConsoleService\WebAppTests\obj\Debug\WebAppTests.csprojResolveAssemblyReference.cache
+C:\Workplace\project\to\CS\ConsoleService\WebAppTests\obj\Debug\WebAppTests.dll
+C:\Workplace\project\to\CS\ConsoleService\WebAppTests\obj\Debug\WebAppTests.pdb

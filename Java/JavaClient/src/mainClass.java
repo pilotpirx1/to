@@ -18,7 +18,8 @@ public class mainClass {
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws SigarException, InterruptedException, MalformedURLException {
 		String hostname = "Unknown";
-
+    float valCPU = 0; 
+    
 		try
 		{
 		    InetAddress addr;
@@ -36,8 +37,19 @@ public class mainClass {
 		
 		while(true) {
 			Date d = new Date();
-			srv.addData(d.getYear(),d.getMonth(),d.getDay(),d.getHours(),d.getMinutes(), (float)d.getSeconds(), hostname, "CPU", (float) cpu.getCombined());
-			System.out.println(cpu.getCombined());
+      valCPU = (float) cpu.getCombined();
+			srv.addData(d.getYear(),d.getMonth(),d.getDay(),d.getHours(),d.getMinutes(), (float)d.getSeconds(), hostname, "CPU", valCPU);
+			System.out.println("CPU: " + valCPU);
+      
+      System.out.println("User Time....." + CpuPerc.format(cpu.getUser()));
+      System.out.println("Sys Time......" + CpuPerc.format(cpu.getSys()));
+      System.out.println("Idle Time....." + CpuPerc.format(cpu.getIdle()));
+      System.out.println("Wait Time....." + CpuPerc.format(cpu.getWait()));
+      System.out.println("Nice Time....." + CpuPerc.format(cpu.getNice()));
+      System.out.println("Combined......" + CpuPerc.format(cpu.getCombined()));
+      System.out.println("Irq Time......" + CpuPerc.format(cpu.getIrq()));
+      System.out.println("------------------------------------------");
+            
 			Thread.sleep(1000);
 
 		}

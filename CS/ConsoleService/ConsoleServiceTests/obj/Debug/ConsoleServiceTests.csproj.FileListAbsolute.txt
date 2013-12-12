@@ -1,0 +1,7 @@
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\bin\Debug\ConsoleServiceTests.dll
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\bin\Debug\ConsoleServiceTests.pdb
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\bin\Debug\ConsoleService.exe
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\bin\Debug\ConsoleService.pdb
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\obj\Debug\ConsoleServiceTests.csprojResolveAssemblyReference.cache
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\obj\Debug\ConsoleServiceTests.dll
+C:\Workplace\project\to\CS\ConsoleService\ConsoleServiceTests\obj\Debug\ConsoleServiceTests.pdb

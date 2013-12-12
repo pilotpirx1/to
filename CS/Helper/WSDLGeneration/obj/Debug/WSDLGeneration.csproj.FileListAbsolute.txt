@@ -3,3 +3,15 @@ C:\studia\tfs\toik\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll
 C:\studia\tfs\toik\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.pdb
 C:\studia\tfs\toik\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.dll
 C:\studia\tfs\toik\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.pdb
+C:\Users\ppiatek\Documents\GitHub\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll.config
+C:\Users\ppiatek\Documents\GitHub\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll
+C:\Users\ppiatek\Documents\GitHub\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.pdb
+C:\Users\ppiatek\Documents\GitHub\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.csprojResolveAssemblyReference.cache
+C:\Users\ppiatek\Documents\GitHub\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.dll
+C:\Users\ppiatek\Documents\GitHub\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.pdb
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll.config
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.pdb
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.dll
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.pdb
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.csprojResolveAssemblyReference.cache

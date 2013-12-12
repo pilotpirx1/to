@@ -13,30 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSDLGeneration", "..\Helper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "..\Helper\WcfService1\WcfService1.csproj", "{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleServiceTests", "ConsoleServiceTests\ConsoleServiceTests.csproj", "{ECB63170-D121-4D61-8386-FEE350800FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppTests", "WebAppTests\WebAppTests.csproj", "{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://naszeprojekty.visualstudio.com/defaultcollection
-		SccProjectUniqueName0 = ConsoleService\\ConsoleService.csproj
-		SccProjectName0 = ConsoleService
-		SccLocalPath0 = ConsoleService
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\ASP.Net\\WebApp\\WebApp.csproj
-		SccProjectName2 = ../../ASP.Net/WebApp
-		SccLocalPath2 = ..\\..\\ASP.Net\\WebApp
-		SccProjectUniqueName3 = ..\\..\\ASP.Net\\WebApp.Tests\\WebApp.Tests.csproj
-		SccProjectName3 = ../../ASP.Net/WebApp.Tests
-		SccLocalPath3 = ..\\..\\ASP.Net\\WebApp.Tests
-		SccProjectUniqueName4 = ..\\Helper\\WSDLGeneration\\WSDLGeneration.csproj
-		SccProjectTopLevelParentUniqueName4 = TOIK.sln
-		SccProjectName4 = ../Helper/WSDLGeneration
-		SccLocalPath4 = ..\\Helper\\WSDLGeneration
-		SccProjectUniqueName5 = ..\\Helper\\WcfService1\\WcfService1.csproj
-		SccProjectTopLevelParentUniqueName5 = TOIK.sln
-		SccProjectName5 = ../Helper/WcfService1
-		SccLocalPath5 = ..\\Helper\\WcfService1
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -62,6 +43,14 @@ Global
 		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B0CA6AA-903C-47E7-8E68-4BED91EDB6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB63170-D121-4D61-8386-FEE350800FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB63170-D121-4D61-8386-FEE350800FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB63170-D121-4D61-8386-FEE350800FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB63170-D121-4D61-8386-FEE350800FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

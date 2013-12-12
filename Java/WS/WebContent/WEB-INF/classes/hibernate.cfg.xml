@@ -31,7 +31,7 @@
         <!-- Enable Hibernate's automatic session context management -->
         <property name="current_session_context_class">thread</property>
 		
-		<mapping class="pl.edu.agh.monitordb.Values"/>		
+		<mapping class="pl.edu.agh.monitordb.ValuesTable"/>		
     </session-factory>
 
 </hibernate-configuration>

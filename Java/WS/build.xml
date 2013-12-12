@@ -15,7 +15,8 @@
 	<property name="classes-directory" value="build/classes" />
 	<property name="web-directory" value="WebContent" />
 	<property name="web-xml-file" value="WebContent/WEB-INF/web.xml" />
-	<tstamp prefix="build-info">
+	<property name="java.library.path" value="C:\Workplace\sqljdbc_4.0\enu\auth\x64"/>
+  <tstamp prefix="build-info">
 		<format property="current-date" pattern="d-MMMM-yyyy" locale="en" />
 		<format property="current-time" pattern="hh:mm:ss a z" locale="en" />
 		<format property="year-month-day" pattern="yyyy-MM-dd" locale="en" />
@@ -109,79 +110,79 @@
     </path>
     <path id="EAR Libraries.libraryclasspath"/>
     <path id="Apache CXF Library [2.7.3].libraryclasspath">
-        <pathelement location="c:/cxf/lib/antlr-2.7.7.jar"/>
-        <pathelement location="c:/cxf/lib/aopalliance-1.0.jar"/>
-        <pathelement location="c:/cxf/lib/asm-3.3.1.jar"/>
-        <pathelement location="c:/cxf/lib/commons-codec-1.7.jar"/>
-        <pathelement location="c:/cxf/lib/commons-collections-3.2.1.jar"/>
-        <pathelement location="c:/cxf/lib/commons-lang-2.6.jar"/>
-        <pathelement location="c:/cxf/lib/commons-logging-1.1.1.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-2.7.3.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-manifest.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-services-sts-core-2.7.3.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-services-ws-discovery-api-2.7.3.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-services-ws-discovery-service-2.7.3.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-services-wsn-api-2.7.3.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-services-wsn-core-2.7.3.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-xjc-boolean-2.6.1.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-xjc-bug671-2.6.1.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-xjc-dv-2.6.1.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-xjc-runtime-2.6.1.jar"/>
-        <pathelement location="c:/cxf/lib/cxf-xjc-ts-2.6.1.jar"/>
-        <pathelement location="c:/cxf/lib/ehcache-core-2.5.1.jar"/>
-        <pathelement location="c:/cxf/lib/FastInfoset-1.2.12.jar"/>
-        <pathelement location="c:/cxf/lib/geronimo-javamail_1.4_spec-1.7.1.jar"/>
-        <pathelement location="c:/cxf/lib/geronimo-jaxws_2.2_spec-1.1.jar"/>
-        <pathelement location="c:/cxf/lib/geronimo-jms_1.1_spec-1.1.1.jar"/>
-        <pathelement location="c:/cxf/lib/geronimo-servlet_3.0_spec-1.0.jar"/>
-        <pathelement location="c:/cxf/lib/httpasyncclient-4.0-beta3.jar"/>
-        <pathelement location="c:/cxf/lib/httpclient-4.2.1.jar"/>
-        <pathelement location="c:/cxf/lib/httpcore-4.2.2.jar"/>
-        <pathelement location="c:/cxf/lib/httpcore-nio-4.2.2.jar"/>
-        <pathelement location="c:/cxf/lib/isorelax-20030108.jar"/>
-        <pathelement location="c:/cxf/lib/javax.ws.rs-api-2.0-m10.jar"/>
-        <pathelement location="c:/cxf/lib/jaxb-api-2.2.6.jar"/>
-        <pathelement location="c:/cxf/lib/jaxb-impl-2.2.6.jar"/>
-        <pathelement location="c:/cxf/lib/jaxb-xjc-2.2.6.jar"/>
-        <pathelement location="c:/cxf/lib/jettison-1.3.3.jar"/>
-        <pathelement location="c:/cxf/lib/jetty-continuation-8.1.7.v20120910.jar"/>
-        <pathelement location="c:/cxf/lib/jetty-http-8.1.7.v20120910.jar"/>
-        <pathelement location="c:/cxf/lib/jetty-io-8.1.7.v20120910.jar"/>
-        <pathelement location="c:/cxf/lib/jetty-security-8.1.7.v20120910.jar"/>
-        <pathelement location="c:/cxf/lib/jetty-server-8.1.7.v20120910.jar"/>
-        <pathelement location="c:/cxf/lib/jetty-util-8.1.7.v20120910.jar"/>
-        <pathelement location="c:/cxf/lib/joda-time-1.6.2.jar"/>
-        <pathelement location="c:/cxf/lib/js-1.7R2.jar"/>
-        <pathelement location="c:/cxf/lib/mina-core-2.0.5.jar"/>
-        <pathelement location="c:/cxf/lib/msv-core-2011.1.jar"/>
-        <pathelement location="c:/cxf/lib/neethi-3.0.2.jar"/>
-        <pathelement location="c:/cxf/lib/oauth-20100527.jar"/>
-        <pathelement location="c:/cxf/lib/oauth-provider-20100527.jar"/>
-        <pathelement location="c:/cxf/lib/opensaml-2.5.1-1.jar"/>
-        <pathelement location="c:/cxf/lib/openws-1.4.2-1.jar"/>
-        <pathelement location="c:/cxf/lib/relaxngDatatype-20020414.jar"/>
-        <pathelement location="c:/cxf/lib/slf4j-api-1.6.2.jar"/>
-        <pathelement location="c:/cxf/lib/slf4j-jdk14-1.6.2.jar"/>
-        <pathelement location="c:/cxf/lib/spring-aop-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-asm-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-beans-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-context-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-core-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-expression-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-jms-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-tx-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/spring-web-3.0.7.RELEASE.jar"/>
-        <pathelement location="c:/cxf/lib/stax2-api-3.1.1.jar"/>
-        <pathelement location="c:/cxf/lib/velocity-1.7.jar"/>
-        <pathelement location="c:/cxf/lib/woodstox-core-asl-4.1.4.jar"/>
-        <pathelement location="c:/cxf/lib/wsdl4j-1.6.2.jar"/>
-        <pathelement location="c:/cxf/lib/wss4j-1.6.9.jar"/>
-        <pathelement location="c:/cxf/lib/xml-resolver-1.2.jar"/>
-        <pathelement location="c:/cxf/lib/xmlbeans-2.6.0.jar"/>
-        <pathelement location="c:/cxf/lib/xmlschema-core-2.0.3.jar"/>
-        <pathelement location="c:/cxf/lib/xmlsec-1.5.3.jar"/>
-        <pathelement location="c:/cxf/lib/xmltooling-1.3.2-1.jar"/>
-        <pathelement location="c:/cxf/lib/xsdlib-2010.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\antlr-2.7.7.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\aopalliance-1.0.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\asm-3.3.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\commons-codec-1.7.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\commons-collections-3.2.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\commons-lang-2.6.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\commons-logging-1.1.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-2.7.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-manifest.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-services-sts-core-2.7.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-services-ws-discovery-api-2.7.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-services-ws-discovery-service-2.7.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-services-wsn-api-2.7.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-services-wsn-core-2.7.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-xjc-boolean-2.6.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-xjc-bug671-2.6.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-xjc-dv-2.6.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-xjc-runtime-2.6.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\cxf-xjc-ts-2.6.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\ehcache-core-2.5.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\FastInfoset-1.2.12.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\geronimo-javamail_1.4_spec-1.7.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\geronimo-jaxws_2.2_spec-1.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\geronimo-jms_1.1_spec-1.1.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\geronimo-servlet_3.0_spec-1.0.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\httpasyncclient-4.0-beta3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\httpclient-4.2.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\httpcore-4.2.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\httpcore-nio-4.2.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\isorelax-20030108.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\javax.ws.rs-api-2.0-m10.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jaxb-api-2.2.6.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jaxb-impl-2.2.6.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jaxb-xjc-2.2.6.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jettison-1.3.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jetty-continuation-8.1.7.v20120910.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jetty-http-8.1.7.v20120910.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jetty-io-8.1.7.v20120910.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jetty-security-8.1.7.v20120910.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jetty-server-8.1.7.v20120910.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\jetty-util-8.1.7.v20120910.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\joda-time-1.6.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\js-1.7R2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\mina-core-2.0.5.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\msv-core-2011.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\neethi-3.0.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\oauth-20100527.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\oauth-provider-20100527.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\opensaml-2.5.1-1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\openws-1.4.2-1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\relaxngDatatype-20020414.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\slf4j-api-1.6.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\slf4j-jdk14-1.6.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-aop-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-asm-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-beans-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-context-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-core-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-expression-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-jms-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-tx-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\spring-web-3.0.7.RELEASE.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\stax2-api-3.1.1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\velocity-1.7.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\woodstox-core-asl-4.1.4.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\wsdl4j-1.6.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\wss4j-1.6.9.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\xml-resolver-1.2.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\xmlbeans-2.6.0.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\xmlschema-core-2.0.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\xmlsec-1.5.3.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\xmltooling-1.3.2-1.jar"/>
+        <pathelement location="C:\Workplace\cxf\lib\xsdlib-2010.1.jar"/>
     </path>
     <path id="WS.classpath">
         <path refid="Maven Dependencies.libraryclasspath"/>
@@ -194,7 +195,7 @@
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build">
 		<mkdir dir="build/classes"/>
-    	<javac srcdir="src" destdir="build/classes"  classpathref="WS.classpath"/>	
+    	<javac srcdir="src" destdir="build/classes"  classpathref="WS.classpath" includeantruntime="false"/>	
     </target>
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
@@ -226,7 +227,7 @@
 			url="${tomcat-manager-url}"
 			username="${tomcat-manager-username}"
 			password="${tomcat-manager-password}"
-			path="/${project-name}"
+			path="${project-name}"
 			war="${build-directory}/${war-file-name}"
 		/>
 	</target>

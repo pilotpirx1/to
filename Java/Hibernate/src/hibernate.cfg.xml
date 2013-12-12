@@ -13,8 +13,8 @@
 		
         <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=MonitorDB;integratedSecurity=true;</property>
-        <property name="connection.username">PPiatek</property>
-        <property name="connection.password">CIP4teum</property>
+        <property name="connection.username">monitorDB</property>
+        <property name="connection.password">monitorDB</property>
 
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
@@ -31,7 +31,7 @@
         <!-- Enable Hibernate's automatic session context management -->
         <property name="current_session_context_class">thread</property>
 		
-		<mapping class="agh.toik.model.Values"/>
+		<mapping class="agh.toik.model.ValuesTable"/>
 		<mapping class="agh.toik.model.Testowanie"/>
 		<mapping class="agh.toik.model.Testowaniex"/>
 		

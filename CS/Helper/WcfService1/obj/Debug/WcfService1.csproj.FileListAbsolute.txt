@@ -1,0 +1,7 @@
+C:\Workplace\project\to\CS\Helper\WcfService1\bin\WcfService1.dll
+C:\Workplace\project\to\CS\Helper\WcfService1\bin\WcfService1.pdb
+C:\Workplace\project\to\CS\Helper\WcfService1\bin\WSDLGeneration.dll
+C:\Workplace\project\to\CS\Helper\WcfService1\bin\WSDLGeneration.pdb
+C:\Workplace\project\to\CS\Helper\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Workplace\project\to\CS\Helper\WcfService1\obj\Debug\WcfService1.dll
+C:\Workplace\project\to\CS\Helper\WcfService1\obj\Debug\WcfService1.pdb
