@@ -1,0 +1,59 @@
+OpenSSL
+
+(stad poszedlem ponizej: http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
+
+1. Install Microsoft Visual C++ 2008 Redistributable Package (x64)
+http://www.microsoft.com/en-us/download/confirmation.aspx?id=15336
+vcredist_x64.exe
+zeby moc zainstalowac OpenSSL
+
+2. Install Win64 OpenSSL v1.0.1e
+http://slproweb.com/products/Win32OpenSSL.html
+
+3. Dodalem do zmiennej Path: C:\OpenSSL-Win64\bin;
+
+4. Create Root CA Certificate
+(http://www.top20toolbar.com/misc/codesigncert.htm)
+
+4.1 openssl genrsa -des3 -out ca.key 4096
+ca.key
+pass: tomcatca
+
+4.2 openssl req -new -x509 -days 365 -key ca.key -out ca.crt
+- Country code: PL
+- Province: Malopolska
+- City: Krakow
+- Organisation Name: AGH
+- Organisation Unit: Informatyka
+- Common Name: agh.edu.pl
+- E-mail: piatekp@student.agh.edu.pl
+
+5. Create and Sign Intermediate Certificate 
+(http://www.top20toolbar.com/misc/codesigncert.htm)
+
+5.1 openssl genrsa -des3 -out server.key 4096
+server.key
+pass: tomcatca
+
+5.2 openssl req -new -key server.key -out server.csr
+- Country code: PL
+- Province: Malopolska
+- City: Krakow
+- Organisation Name: AGH
+- Organisation Unit: Informatyka
+- Common Name: agh.edu.pl
+- E-mail: piatekp@student.agh.edu.pl
+
+5.3 openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
+
+6. C:\Workplace\cert>openssl pkcs12 -export -in server.crt -inkey server.key -out mycert.p12 -name tomcat -CAfile ca.crt -caname root -chain
+
+7. C:\Workplace\cert>openssl x509 -req -days 365 -in server.csr -signkey server.key -out serverself.crt
+
+8. W pliku server.xml - tomcat:
+<Connector protocol="HTTP/1.1"
+           port="8443" maxThreads="200"
+           scheme="https" secure="true" SSLEnabled="true"
+           SSLCertificateFile="C:\Workplace\project\to\cert\serverself.crt"
+           SSLCertificateKeyFile="C:\Workplace\project\to\cert\server.key"
+           SSLVerifyClient="optional" SSLProtocol="TLSv1" /> 
