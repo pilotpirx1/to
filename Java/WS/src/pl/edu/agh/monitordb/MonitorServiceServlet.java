@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.xml.ws.Endpoint;
 
+
 /**
  * Servlet implementation class MonitorServiceServlet
  */
@@ -16,7 +17,7 @@ public class MonitorServiceServlet extends org.apache.cxf.transport.servlet.CXFN
 	@Override
     public void loadBus(ServletConfig servletConfig) {
         super.loadBus(servletConfig);        
-
+        
         Endpoint.publish("/MonitorDBService", new MonitorService());
     }
 

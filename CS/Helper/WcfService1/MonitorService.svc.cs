@@ -13,7 +13,7 @@ namespace WcfService1
     [ServiceBehavior(Namespace="http://MonitorDB.agh.edu.pl")]
     public class MonitorService : IMonitorService
     {
-        public void AddData(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value)
+        public void AddData(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value, string verify)
         {
             throw new NotImplementedException();
         }

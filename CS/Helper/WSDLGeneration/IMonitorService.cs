@@ -12,6 +12,6 @@ namespace WSDLGeneration
     public interface IMonitorService
     {
         [OperationContract]
-        void AddData(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value);
+        void AddData(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value, string verify);
     }
 }

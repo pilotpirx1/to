@@ -1,0 +1,26 @@
+package pl.edu.agh.monitordb;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.xml.ws.Endpoint;
+
+import org.apache.cxf.jaxws.EndpointImpl;
+
+/**
+ * Servlet implementation class MonitorServiceServlet
+ */
+@WebServlet("/MonitorServiceServlet")
+public class MonitorServiceServlet extends org.apache.cxf.transport.servlet.CXFNonSpringServlet {
+	private static final long serialVersionUID = 1L;
+       
+	@Override
+    public void loadBus(ServletConfig servletConfig) {
+        super.loadBus(servletConfig);        
+
+        EndpointImpl jaxWsEndpoint = (EndpointImpl) Endpoint.publish("/MonitorDBService", new MonitorService());
+        Endpoint cxfEndpoint = (javax.xml.ws.Endpoint) jaxWsEndpoint.getServer().getEndpoint();
+    }
+
+}

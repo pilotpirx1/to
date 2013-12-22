@@ -16,4 +16,9 @@
 <fullyQualifiedTypeName name="java.net.InetAddress"/>
 <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
 <fullyQualifiedTypeName name="MonitorServiceClient"/>
+<fullyQualifiedTypeName name="org.apache.cxf.endpoint.EndpointImpl"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.apache.ws.security.handler.WSHandlerConstants"/>
+<fullyQualifiedTypeName name="org.apache.ws.security.WSConstants"/>
 </qualifiedTypeNameHistroy>

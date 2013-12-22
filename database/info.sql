@@ -1,0 +1,4 @@
+
+
+INSERT INTO [MonitorDB].[dbo].[UsersTable] ([NameUser], [PassUser])
+VALUES ('wsuser', HASHBYTES('MD5', 'wsuser'));

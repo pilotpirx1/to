@@ -31,7 +31,8 @@
         <!-- Enable Hibernate's automatic session context management -->
         <property name="current_session_context_class">thread</property>
 		
-		<mapping class="agh.toik.model.ValuesTable"/>		
+		<mapping class="pl.edu.agh.monitordb.Values"/>	
+    <mapping class="pl.edu.agh.monitordb.Users"/>	
     </session-factory>
 
 </hibernate-configuration>

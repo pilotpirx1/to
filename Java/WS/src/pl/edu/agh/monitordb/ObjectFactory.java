@@ -26,6 +26,7 @@ public class ObjectFactory {
 
     private final static QName _AddDataComputer_QNAME = new QName("http://MonitorDB.agh.edu.pl", "computer");
     private final static QName _AddDataCounter_QNAME = new QName("http://MonitorDB.agh.edu.pl", "counter");
+    private final static QName _AddDataVerify_QNAME = new QName("http://MonitorDB.agh.edu.pl", "verify");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: pl.edu.agh.monitordb
@@ -67,5 +68,15 @@ public class ObjectFactory {
     public JAXBElement<String> createAddDataCounter(String value) {
         return new JAXBElement<String>(_AddDataCounter_QNAME, String.class, AddData.class, value);
     }
-
+    
+    
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://MonitorDB.agh.edu.pl", name = "verify", scope = AddData.class)
+    public JAXBElement<String> createAddDataVerify(String value) {
+        return new JAXBElement<String>(_AddDataVerify_QNAME, String.class, AddData.class, value);
+    }
+     
 }

@@ -27,8 +27,6 @@ public class Values {
 	
 	private Float CounterValue;
 	
-	
-	
 	public Integer getId() {
 		return Id;
 	}

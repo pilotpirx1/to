@@ -46,7 +46,8 @@ import javax.xml.bind.annotation.XmlType;
     "sec",
     "computer",
     "counter",
-    "value"
+    "value",
+    "verify"
 })
 @XmlRootElement(name = "AddData")
 public class AddData {
@@ -61,6 +62,8 @@ public class AddData {
     protected JAXBElement<String> computer;
     @XmlElementRef(name = "counter", namespace = "http://MonitorDB.agh.edu.pl", type = JAXBElement.class, required = false)
     protected JAXBElement<String> counter;
+    @XmlElementRef(name = "verify", namespace = "http://MonitorDB.agh.edu.pl", type = JAXBElement.class, required = true)
+    protected JAXBElement<String> verify;
     protected Float value;
 
     /**
@@ -253,6 +256,30 @@ public class AddData {
      */
     public void setCounter(JAXBElement<String> value) {
         this.counter = value;
+    }
+
+    /**
+     * Gets the value of the verify property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    public JAXBElement<String> getVerify() {
+        return verify;
+    }
+
+    /**
+     * Sets the value of the verify property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    public void setVerify(JAXBElement<String> value) {
+        this.verify = value;
     }
 
     /**

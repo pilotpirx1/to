@@ -37,6 +37,7 @@
             <xs:element minOccurs="0" name="computer" type="xs:string" />
             <xs:element minOccurs="0" name="counter" type="xs:string" />
             <xs:element minOccurs="0" name="value" type="xs:float" />
+            <xs:element name="verify" type="xs:string" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>

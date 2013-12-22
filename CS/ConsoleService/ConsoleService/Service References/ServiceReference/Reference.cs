@@ -73,10 +73,13 @@ namespace ConsoleService.ServiceReference {
         [System.Runtime.Serialization.DataMemberAttribute(Order=8)]
         public float value;
         
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
+        public string verify;
+        
         public AddDataBody() {
         }
         
-        public AddDataBody(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value) {
+        public AddDataBody(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value, string verify) {
             this.year = year;
             this.month = month;
             this.day = day;
@@ -86,6 +89,7 @@ namespace ConsoleService.ServiceReference {
             this.computer = computer;
             this.counter = counter;
             this.value = value;
+            this.verify = verify;
         }
     }
     
@@ -148,7 +152,7 @@ namespace ConsoleService.ServiceReference {
             return base.Channel.AddData(request);
         }
         
-        public void AddData(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value) {
+        public void AddData(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value, string verify) {
             ConsoleService.ServiceReference.AddData inValue = new ConsoleService.ServiceReference.AddData();
             inValue.Body = new ConsoleService.ServiceReference.AddDataBody();
             inValue.Body.year = year;
@@ -160,6 +164,7 @@ namespace ConsoleService.ServiceReference {
             inValue.Body.computer = computer;
             inValue.Body.counter = counter;
             inValue.Body.value = value;
+            inValue.Body.verify = verify;
             ConsoleService.ServiceReference.AddDataResponse retVal = ((ConsoleService.ServiceReference.IMonitorService)(this)).AddData(inValue);
         }
         
@@ -168,7 +173,7 @@ namespace ConsoleService.ServiceReference {
             return base.Channel.AddDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsoleService.ServiceReference.AddDataResponse> AddDataAsync(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value) {
+        public System.Threading.Tasks.Task<ConsoleService.ServiceReference.AddDataResponse> AddDataAsync(int year, int month, int day, int hour, int min, float sec, string computer, string counter, float value, string verify) {
             ConsoleService.ServiceReference.AddData inValue = new ConsoleService.ServiceReference.AddData();
             inValue.Body = new ConsoleService.ServiceReference.AddDataBody();
             inValue.Body.year = year;
@@ -180,6 +185,7 @@ namespace ConsoleService.ServiceReference {
             inValue.Body.computer = computer;
             inValue.Body.counter = counter;
             inValue.Body.value = value;
+            inValue.Body.verify = verify;
             return ((ConsoleService.ServiceReference.IMonitorService)(this)).AddDataAsync(inValue);
         }
     }

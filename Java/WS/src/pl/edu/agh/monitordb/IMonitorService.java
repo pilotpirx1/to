@@ -40,6 +40,8 @@ public interface IMonitorService {
         @WebParam(name = "counter", targetNamespace = "http://MonitorDB.agh.edu.pl")
         java.lang.String counter,
         @WebParam(name = "value", targetNamespace = "http://MonitorDB.agh.edu.pl")
-        java.lang.Float value
+        java.lang.Float value,
+        @WebParam(name = "verify", targetNamespace = "http://MonitorDB.agh.edu.pl")
+        java.lang.String verify
     );
 }
