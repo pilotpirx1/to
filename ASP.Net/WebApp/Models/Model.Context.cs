@@ -12,8 +12,11 @@ namespace WebApp.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class Entities : DbContext
+  public interface IEntities
+  {
+    IDbSet<ValuesTable> ValuesTable { get; set; }
+  }
+    public partial class Entities : DbContext, IEntities
     {
         public Entities()
             : base("name=Entities")
@@ -25,6 +28,6 @@ namespace WebApp.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<ValuesTable> ValuesTable { get; set; }
+        public virtual IDbSet<ValuesTable> ValuesTable { get; set; }
     }
 }

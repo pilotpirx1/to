@@ -11,10 +11,19 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private Entities db = new Entities();
+      private Entities db;
 
         //
         // GET: /Default1/
+
+        public HomeController()
+        {
+          db = new Entities();
+        }
+        public HomeController(Entities entities)
+        {
+          db = entities;
+        }
 
         public ActionResult Index()
         {
