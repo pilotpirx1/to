@@ -21,4 +21,17 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.apache.ws.security.handler.WSHandlerConstants"/>
 <fullyQualifiedTypeName name="org.apache.ws.security.WSConstants"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="pl.edu.agh.monitordb.MonitorService"/>
+<fullyQualifiedTypeName name="org.junit.rules.MethodRule"/>
+<fullyQualifiedTypeName name="org.junit.runners.model.FrameworkMethod"/>
+<fullyQualifiedTypeName name="org.hibernate.hql.internal.ast.tree.Statement"/>
+<fullyQualifiedTypeName name="org.junit.After"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.AnnotationConfiguration"/>
+<fullyQualifiedTypeName name="pl.edu.agh.monitordb.Users"/>
+<fullyQualifiedTypeName name="org.junit.AfterClass"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="com.sun.msv.driver.textui.Debug"/>
 </qualifiedTypeNameHistroy>

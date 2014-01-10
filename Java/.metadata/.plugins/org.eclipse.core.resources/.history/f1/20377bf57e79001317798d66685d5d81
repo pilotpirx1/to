@@ -1,0 +1,42 @@
+package pl.edu.agh.monitordb.test;
+
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import pl.edu.agh.monitordb.MonitorService;
+
+public class MonitorServiceTest {
+
+	@Test
+	public void test() {
+		
+		MonitorService monitorService = new MonitorService();
+		
+		fail("Not yet implemented");
+	}
+	
+	
+	
+	
+	String message = "Hello World";	
+	MessageUtil messageUtil = new MessageUtil(message);
+
+	@Before
+	public void testBefore() {
+		System.out.println("Test Before");
+	}
+	
+	@Test
+	public void testPrintMessage() {	  
+		assertEquals(message,messageUtil.printMessage());
+	
+	}
+	
+	@Test
+	public void testMultiply() {
+		assertEquals("10 x 5 must be 50", 50, messageUtil.multiply(10, 5));
+	}
+
+}

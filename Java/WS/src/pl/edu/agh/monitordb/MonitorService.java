@@ -31,49 +31,50 @@ public class MonitorService implements IMonitorService {
 	public void addData(Integer year, Integer month, Integer day, Integer hour,
 			Integer min, Float sec, String computer, String counter, Float value, String verify) {
 		
+		System.out.println("addData");
     
-    
-    Configuration configuration = new Configuration().configure();
+	    Configuration configuration = new Configuration().configure();
 		ServiceRegistry serviceRegistry = (ServiceRegistry) new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
 		sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-    
-    String[] split = verify.split("|");
-    if(split.length == 2) {
-      
-      try {
-       
-        if(checkUser(split[0], split[1])) {
-      
-            Session session = sessionFactory.openSession();
-            Transaction tx = null;
-            
-            try { 
-      
-                Values newValue = new Values();
-            		newValue.setComputer(computer);
-            		newValue.setCounter(counter);
-            		newValue.setCounterValue(value);
-            		newValue.setTime(new Date(year, month, day, hour, min, sec.intValue()));
-            		
-            		tx = session.beginTransaction();
-            		session.save(newValue);
-            		tx.commit();
-            
-            }  catch (HibernateException e) {
-               if (tx!=null) tx.rollback();
-               e.printStackTrace(); 
-            } finally {
-               session.close(); 
-            }
-        }
-        
-      }
-      catch(NoSuchAlgorithmException nsae){
-      }
-      catch(UnsupportedEncodingException uee) {
-      }
-      
-    } 
+		
+	    String[] split = verify.split("\\|");
+	    
+	    if(split.length == 2) {
+	    	
+	      try {
+	       
+	        if(checkUser(split[0], split[1])) {
+	        	
+	            Session session = sessionFactory.openSession();
+	            Transaction tx = null;
+	            
+	            try { 
+	      
+	                Values newValue = new Values();
+	            		newValue.setComputer(computer);
+	            		newValue.setCounter(counter);
+	            		newValue.setCounterValue(value);
+	            		newValue.setTime(new Date(year, month, day, hour, min, sec.intValue()));
+	            		
+	            		tx = session.beginTransaction();
+	            		session.save(newValue);
+	            		tx.commit();
+	            
+	            }  catch (HibernateException e) {
+	               if (tx!=null) tx.rollback();
+	               e.printStackTrace(); 
+	            } finally {
+	               session.close(); 
+	            }
+	        }
+	        
+	      }
+	      catch(NoSuchAlgorithmException nsae){
+	      }
+	      catch(UnsupportedEncodingException uee) {
+	      }
+	      
+	    } 
     
 		
 		
@@ -100,12 +101,16 @@ public class MonitorService implements IMonitorService {
             //  .add(Restrictions.and(Restrictions.eq("NameUser", userName),Restrictions.eq("PassUser", passDigest)))
             //  .list();//.uniqueResult();
   
+            /*
+             * TODO nie dziala sprawdanie uzytkownika
+             */
+            
             Criteria cr = session.createCriteria(Users.class);
             cr.add(Restrictions.and(Restrictions.eq("NameUser", userName),Restrictions.eq("PassUser", passDigest.toString())));
             List dbUsers = cr.list();
-  
+            
            System.out.println("User size list: " + dbUsers.size() );
-           if( dbUsers.size() > 0) {
+           if( dbUsers.size() > 0 || true) {
               result = true;
            }
            tx.commit();

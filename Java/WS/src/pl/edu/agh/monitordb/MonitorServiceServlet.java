@@ -13,7 +13,7 @@ import javax.xml.ws.Endpoint;
 @WebServlet("/MonitorServiceServlet")
 public class MonitorServiceServlet extends org.apache.cxf.transport.servlet.CXFNonSpringServlet {
 	private static final long serialVersionUID = 1L;
-       
+    
 	@Override
     public void loadBus(ServletConfig servletConfig) {
         super.loadBus(servletConfig);        
