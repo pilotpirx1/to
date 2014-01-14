@@ -14,3 +14,4 @@ C:\Workplace\project\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.dll
 C:\Workplace\project\to\CS\Helper\WSDLGeneration\bin\Debug\WSDLGeneration.pdb
 C:\Workplace\project\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.dll
 C:\Workplace\project\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.pdb
+C:\Workplace\project\to\CS\Helper\WSDLGeneration\obj\Debug\WSDLGeneration.csprojResolveAssemblyReference.cache
