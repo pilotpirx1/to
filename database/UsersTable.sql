@@ -13,8 +13,8 @@ GO
 
 CREATE TABLE [dbo].[UsersTable](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[NameUser] [nchar](32) NOT NULL,
-	[PassUser] [char](32) NOT NULL,
+	[NameUser] [nvarchar](32) NOT NULL,
+	[PassUser] [nvarchar](32) NOT NULL,
  CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

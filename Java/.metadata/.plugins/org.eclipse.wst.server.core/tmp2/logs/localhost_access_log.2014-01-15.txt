@@ -1,0 +1,2 @@
+127.0.0.1 - - [15/Jan/2014:21:22:46 +0100] "GET / HTTP/1.1" 200 1130
+0:0:0:0:0:0:0:1 - - [15/Jan/2014:21:22:47 +0100] "GET /WS/WEB-INF/classes/pl/edu/agh/monitordb/test/MonitorServiceTest.java HTTP/1.1" 404 949

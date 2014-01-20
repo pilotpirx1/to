@@ -89,5 +89,12 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/easymock-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/easymock-3.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/easymock-3.2-samples.jar"/>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/easymock-3.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/easymock-3.2-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Workplace/project/to/Java/WS/WebContent/WEB-INF/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
