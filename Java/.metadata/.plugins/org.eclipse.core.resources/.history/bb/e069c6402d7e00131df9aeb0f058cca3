@@ -1,0 +1,5 @@
+package pl.edu.agh.monitordb.hibernate;
+
+public interface UsersInterface {
+
+}

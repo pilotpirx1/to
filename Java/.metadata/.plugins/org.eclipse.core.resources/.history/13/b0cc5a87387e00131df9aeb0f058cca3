@@ -1,0 +1,17 @@
+package pl.edu.agh.monitordb;
+
+public interface UsersInterface {
+	
+	public Integer getId();
+	
+	public void setId(Integer id);
+	
+	public String getNameUser();
+	
+	public void setNameUser(String nameUser);
+  
+	public String getPassUser();
+	
+	public void setPassUser(String passUser);
+	
+}
