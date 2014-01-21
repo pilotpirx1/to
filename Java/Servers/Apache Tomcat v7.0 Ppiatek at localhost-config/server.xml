@@ -88,7 +88,7 @@
                clientAuth="false" sslProtocol="TLS" -->
     
     <Connector protocol="HTTP/1.1"
-           port="8443" maxThreads="200"
+           port="8443" maxThreads="20000"
            scheme="https" secure="true" SSLEnabled="true"
            SSLCertificateFile="C:\Workplace\project\to\cert\serverself.crt"
            SSLCertificateKeyFile="C:\Workplace\project\to\cert\server.key"
