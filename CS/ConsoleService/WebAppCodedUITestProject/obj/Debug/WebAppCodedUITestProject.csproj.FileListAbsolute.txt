@@ -1,0 +1,4 @@
+C:\Workplace\project\to\CS\ConsoleService\WebAppCodedUITestProject\bin\Debug\WebAppCodedUITestProject.dll
+C:\Workplace\project\to\CS\ConsoleService\WebAppCodedUITestProject\bin\Debug\WebAppCodedUITestProject.pdb
+C:\Workplace\project\to\CS\ConsoleService\WebAppCodedUITestProject\obj\Debug\WebAppCodedUITestProject.dll
+C:\Workplace\project\to\CS\ConsoleService\WebAppCodedUITestProject\obj\Debug\WebAppCodedUITestProject.pdb

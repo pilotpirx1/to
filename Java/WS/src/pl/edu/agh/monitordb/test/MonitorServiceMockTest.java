@@ -1,7 +1,11 @@
 package pl.edu.agh.monitordb.test;
 
+import static org.junit.Assert.*;
+
+import java.io.Console;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -33,12 +37,7 @@ public class MonitorServiceMockTest {
 	    criteria = EasyMock.createMock(Criteria.class);
 	}
 	
-	@Test
-	public void testAddData() {
-		
-		
-		
-	}
+	
 	
 	@Test
 	public void testCheckUser() throws NoSuchAlgorithmException, UnsupportedEncodingException, HibernateException {
@@ -51,28 +50,35 @@ public class MonitorServiceMockTest {
 		user.setNameUser(userName);
 		user.setPassUser(passHash);
 		
+		List<Users> users = new ArrayList<Users>();
+		users.add(user);
+		
 		EasyMock.expect(sessionFactory.getCurrentSession()).andReturn(session);
+		EasyMock.expect(sessionFactory.openSession()).andReturn(session);
 		EasyMock.expect(session.createCriteria(UsersInterface.class)).andReturn(criteria);
 		EasyMock.expect(criteria.add(Restrictions.eq("NameUser", userName))).andReturn(criteria);
 		EasyMock.expect(criteria.add(Restrictions.eq("PassUser", passHash))).andReturn(criteria);
-		EasyMock.expect(criteria.uniqueResult()).andReturn(user);
+		EasyMock.expect(criteria.add(Restrictions.and(Restrictions.eq("NameUser", userName),Restrictions.eq("PassUser", passHash)))).andReturn(criteria);
+		EasyMock.expect(criteria.list()).andReturn(users);
 		
-		//criteria.add(
-		//		Restrictions.and(Restrictions.eq("NameUser", userName),
-		//				Restrictions.eq("PassUser", passDigest))
-		//);
-        //List<Users> dbUsers = criteria.list();
+		
 		EasyMock.replay(sessionFactory, session, criteria);
 		
+		Session sessionTest = sessionFactory.openSession();
+		Criteria crTest = sessionTest.createCriteria(UsersInterface.class);
+		//crTest.add(Restrictions.and(Restrictions.eq("NameUser", userName),Restrictions.eq("PassUser", passHash)));
+        List<Users> dbUsers = crTest.list();
 		
-		
+        assertEquals(1, dbUsers.size());
+        assertEquals(users, dbUsers);
 	}
 	
 	
 	@After
 	public void after() {
-		//session.close();
-		//sessionFactory.close();
+		//EasyMock.verify(sessionFactory);
+		//EasyMock.verify(session);
+		//EasyMock.verify(criteria);
 	}
 	
 }

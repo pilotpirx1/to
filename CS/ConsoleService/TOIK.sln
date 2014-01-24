@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleServiceTests", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppTests", "WebAppTests\WebAppTests.csproj", "{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCodedUITestProject", "WebAppCodedUITestProject\WebAppCodedUITestProject.csproj", "{8B96AC46-0EFF-48CF-A5C3-111671A314B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6A8A361-EFAC-46A5-9C3D-0106D4E6A093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B96AC46-0EFF-48CF-A5C3-111671A314B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B96AC46-0EFF-48CF-A5C3-111671A314B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B96AC46-0EFF-48CF-A5C3-111671A314B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B96AC46-0EFF-48CF-A5C3-111671A314B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
